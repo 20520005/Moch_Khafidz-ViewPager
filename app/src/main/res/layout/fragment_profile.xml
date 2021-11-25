@@ -34,13 +34,25 @@
         android:gravity="center"
         android:layout_below="@id/text_view"/>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@id/text_view2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
     <ImageView
         android:id="@+id/foto_profil"
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:src="@drawable/mokkss"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/text_view2"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
 
     <TextView
         android:id="@+id/nama_profil"
@@ -54,10 +66,9 @@
         android:textStyle="bold"
         android:fontFamily="serif-monospace"
         android:textAlignment="center"
-        android:layout_centerInParent="true"
+        android:layout_gravity="center"
         android:padding="10dp"
-        android:background="#2d91e3"
-        android:layout_below="@id/foto_profil"/>
+        android:background="@drawable/bentuk" />
 
     <TextView
         android:id="@+id/nim_profil"
@@ -70,10 +81,9 @@
         android:textStyle="bold"
         android:fontFamily="serif-monospace"
         android:textAlignment="center"
-        android:layout_centerInParent="true"
+        android:layout_gravity="center"
         android:padding="10dp"
-        android:background="#2d91e3"
-        android:layout_below="@id/nama_profil"/>
+        android:background="@drawable/bentuk" />
 
     <TextView
         android:id="@+id/prodi_profil"
@@ -86,10 +96,11 @@
         android:textStyle="bold"
         android:fontFamily="serif-monospace"
         android:textAlignment="center"
-        android:layout_centerInParent="true"
+        android:layout_gravity="center"
         android:padding="10dp"
-        android:background="#2d91e3"
-        android:layout_below="@id/nim_profil"/>
+        android:background="@drawable/bentuk" />
 
+    </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
